@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "Child Comment Expander",
+	"description": "Expands child comments in threads that use contest mode.",
+	"version": "0.2",
+
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.reddit.com/r/*/comments/*"
+			],
+			"js": ["childcommentexpander.js"]
+		}
+	],
+
+	"permissions": [
+	],
+	"browser_action": {
+		"default_icon": "icon.png"
+	}
+}
